@@ -1,4 +1,4 @@
-import Image from "next/image";
+import StickyNavbar from "./_components/home-header-custom";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
 
       <div className="flex min-h-screen bg-slate-700">
 
-
+     
 
       </div>
 
