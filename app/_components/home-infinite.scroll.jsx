@@ -5,6 +5,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useSliderAnimation from "hooks/useSliderAnimation";
+import Image from "next/image";
 
 const Slider = () => {
 
@@ -43,7 +44,7 @@ const Slider = () => {
               className="flex gap-5 pr-5 border border-[#50B498] green"
             >
               {data.map((image, i) => (
-                <img
+                <Image
                   key={image.id}
                   src={image.image}
                   alt="image"
