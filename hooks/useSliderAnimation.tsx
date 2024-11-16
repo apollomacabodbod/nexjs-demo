@@ -1,8 +1,9 @@
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-export default function useSliderAnimation(speed) {
-  const refs = useRef([]);
+export default function useSliderAnimation(speed: number) {
+
+  const refs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
     let xPercent = 0;

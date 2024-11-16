@@ -51,7 +51,7 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
     <div
       ref={sidebarRef} // Attach the ref to the sidebar
       className={`lg:hidden fixed top-0 right-0 w-64 h-full z-50 bg-gray-800 text-white transition-transform duration-300 ${
-        sidebarOpen ? 'translate-x-0' : 'translate-x-full'
+        sidebarOpen ? '' : ''
       }`}
     >
       <div className="p-4 flex justify-end">

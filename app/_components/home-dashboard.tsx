@@ -17,61 +17,67 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen">
       {/* Sidebar */}
-      <div className="w-64 bg-gray-800 text-white p-4 max-h-screen overflow-y-auto">
-        <h2 className="text-2xl font-semibold mb-4">Dashboard</h2>
-        <ul>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Home</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Profile</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Settings</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
 
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
+      <div className='flex flex-col'>
 
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
+        <div className="w-64 bg-gray-800 text-white p-4 max-h-screen overflow-y-auto">
+          <h2 className="text-2xl font-semibold mb-4">Dashboard</h2>
+          <ul>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Home</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Profile</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Settings</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
 
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
 
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-          <li className="mb-4">
-            <a href="#" className="text-gray-300 hover:text-white">Logout</a>
-          </li>
-        </ul>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-gray-300 hover:text-white">Logout</a>
+            </li>
+          </ul>
+        </div>
+
+
       </div>
-
+    
       {/* Main Content */}
       <div className="flex-1 bg-gray-100 p-6 ">
         <h1 className="text-3xl font-semibold mb-6">Welcome to the Dashboard</h1>
