@@ -1,6 +1,7 @@
-"use client";
 
-import React from "react";
+"use client"
+
+import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import useSliderAnimation from "hooks/useSliderAnimation";
 import Image from "next/image";
@@ -15,8 +16,14 @@ const Slider = () => {
     { id: 6, image: "/home-gallery-image-6.svg" },
   ];
 
-  // Get the references for the elements (make sure this is typed correctly)
-  const refs = useSliderAnimation(window.innerWidth > 1280 ? 0.01 : 0.06);
+  const [animationSpeed, setAnimationSpeed] = useState(0.01); // Default speed
+  const refs = useSliderAnimation(animationSpeed);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setAnimationSpeed(window.innerWidth > 1280 ? 0.01 : 0.06);
+    }
+  }, []);
 
   return (
     <motion.div
@@ -36,7 +43,7 @@ const Slider = () => {
               key={i}
               ref={(el: HTMLDivElement | null) => {
                 if (el) refs.current[i] = el;
-              }}  // Set ref without returning anything
+              }} // Set ref without returning anything
               className="flex gap-5 pr-5 border border-[#50B498] green"
             >
               {data.map((image) => (

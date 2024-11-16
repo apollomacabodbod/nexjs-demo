@@ -3,38 +3,39 @@ import StickyNavbar from "./_components/home-header-custom";
 import Dashboard from "./_components/home-dashboard";
 import Slider from "./_components/home-infinite.scroll";
 import HomeFramer from "./_components/home-framer";
+import GridLayout from "./_components/home-grid-layout";
 
 export default async function Home() {
   return (
     <>
 
-      <div className="snap-y snap-mandatory overflow-auto h-screen">
 
 
-        <div className="min-h-screen bg-slate-400 scroll-smooth  snap-end ">
-          <p>awdwd</p>
-        </div>
+      <div className="min-h-screen bg-slate-400 scroll-smooth  snap-end ">
+        <p>awdwd</p>
+      </div>
 
-        <div className="min-h-screen bg-red-300  scroll-smooth snap-start">
-          <HomeFramer />
-        </div>
+      <div className="min-h-screen bg-red-300  scroll-smooth snap-start">
+        <HomeFramer />
+      </div>
 
-        <div className="min-h-screen bg-white  scroll-smooth  snap-start">
-          <div className="flex flex-col">
-            <div className="flex items-center justify-center">
-              <Slider />
-            </div>
+      <div className="min-h-screen bg-white  scroll-smooth  snap-start">
+        <div className="flex flex-col">
+          <div className="flex items-center justify-center">
+            <Slider />
           </div>
         </div>
-
-        <div className="min-h-screen bg-red-300  scroll-smooth snap-start">
-        </div>
-
-
-        <div className="min-h-screen bg-orange-300  scroll-smooth snap-start">
-        </div>
-
       </div>
+
+      <div className="min-h-screen bg-red-300  scroll-smooth snap-start">
+      </div>
+
+
+      <div className="min-h-screen bg-orange-300  scroll-smooth snap-start">
+
+        <GridLayout/>
+      </div>
+
     </>
   );
 }
