@@ -1,8 +1,10 @@
+
 import Image from "next/image";
 import StickyNavbar from "./_components/home-header-custom";
 import Dashboard from "./_components/home-dashboard";
 import Slider from "./_components/home-infinite.scroll";
 import HomeFramer from "./_components/home-framer";
+
 
 export default async function Home() {
 
@@ -13,7 +15,8 @@ export default async function Home() {
 
     <>
 
-      <div className="min-h-screen bg-slate-400">
+
+      <div className="min-h-screen bg-slate-400 scroll-smooth">
 
 
         <p>awdwd</p>
@@ -23,7 +26,7 @@ export default async function Home() {
       </div>
 
 
-      <div className=" min-h-screen bg-red-300">
+      <div className=" min-h-screen bg-red-300 scroll-smooth">
 
         <HomeFramer/>
 
@@ -33,7 +36,7 @@ export default async function Home() {
 
 
 
-      <div className="min-h-screen bg-white ">
+      <div className="min-h-screen bg-white scroll-smooth">
 
         <div className="flex flex-col">
 

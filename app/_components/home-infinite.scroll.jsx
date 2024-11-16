@@ -26,13 +26,19 @@ const Slider = () => {
   return (
     <motion.div
       className=""
-      initial="hidden"
-      whileInView="visible"
+      // viewport={{ once: true, amount: 0.5 }}
+      // transition={{ duration: 0.8 }}
+      // variants={{
+      //   hidden: { opacity: 0, y: 100 },
+      //   visible: { opacity: 1, y: 0 },
+      // }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.8 }}
-      variants={{
-        hidden: { opacity: 0, y: 100 },
-        visible: { opacity: 1, y: 0 },
+      transition={{
+        duration: 1,
+        ease: "easeInOut",
+        delay: 0.2, // Delay each line progressively
       }}
     >
       <div className="overflow-x-hidden border border-[#50B498] green ">
@@ -47,6 +53,8 @@ const Slider = () => {
                 <Image
                   key={image.id}
                   src={image.image}
+                  width={400}
+                  height={400}
                   alt="image"
                   className="md:h-[340px] w-[272px] md:w-[400px] xl:h-[400px] border border-[#50B498] green "
                 />
